@@ -1,0 +1,33 @@
+import { Scene } from "../../classes/Scene.js";
+import { Track } from "./_elements/Track.js";
+
+class SongScene extends Scene {
+    constructor(game) {
+        super(game);
+
+        this.songArea = this.calculateArea();
+
+        this.elementHolder.addElement("track", new Track(this.game, this.songArea));
+    }
+
+    get area() {
+        return this.songArea;
+    }
+
+    calculateArea() {
+        let x = Math.min(this.game.sx, this.game.sy * 0.5);
+        let y = this.game.sy;
+        let start = (this.game.sx * 100 - x * 100) / 2;
+        let end = start + x * 100;
+
+        return { x, y, start, end };
+    }
+
+    onResize() {
+        this.songArea = this.calculateArea();
+
+        super.onResize();
+    }
+}
+
+export { SongScene };

@@ -1,4 +1,5 @@
 import { MainScene } from "../scenes/main/MainScene.js";
+import { SongScene } from "../scenes/song/SongScene.js";
 
 class SceneManager {
     constructor(game) {
@@ -14,6 +15,10 @@ class SceneManager {
         switch (scene) {
             case "main":
                 this.scene = new MainScene(this.game);
+                break;
+
+            case "song":
+                this.scene = new SongScene(this.game);
                 break;
         }
     }
