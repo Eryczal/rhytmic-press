@@ -14,6 +14,10 @@ class Scene {
         this.elementHolder.draw();
     }
 
+    onResize() {
+        this.elementHolder.onResize();
+    }
+
     onKeyUp(e) {
         this.elementHolder.onKeyUp(e);
     }

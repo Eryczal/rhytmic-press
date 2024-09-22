@@ -18,6 +18,10 @@ class SceneManager {
         }
     }
 
+    onResize() {
+        this.scene.onResize();
+    }
+
     onKeyUp(e) {
         this.scene.onKeyUp(e);
     }

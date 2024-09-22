@@ -22,6 +22,12 @@ class ElementHolder {
         }
     }
 
+    onResize() {
+        for (let elem in this.elements) {
+            this.elements[elem]?.onResize();
+        }
+    }
+
     onKeyUp(e) {
         for (let elem in this.elements) {
             this.elements[elem]?.onKeyUp(e);
