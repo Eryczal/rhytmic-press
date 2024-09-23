@@ -11,6 +11,10 @@ class Scene {
         this.elementHolder?.list;
     }
 
+    init() {
+        this.elementHolder.init();
+    }
+
     draw() {
         this.elementHolder.draw();
     }

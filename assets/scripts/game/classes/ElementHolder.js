@@ -16,6 +16,12 @@ class ElementHolder {
         delete this.elements[id];
     }
 
+    init() {
+        for (let elem in this.elements) {
+            this.elements[elem]?.init();
+        }
+    }
+
     draw() {
         for (let elem in this.elements) {
             this.elements[elem]?.draw();

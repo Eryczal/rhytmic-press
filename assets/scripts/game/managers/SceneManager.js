@@ -7,6 +7,10 @@ class SceneManager {
         this.scene = new MainScene(this.game);
     }
 
+    init() {
+        this.scene?.init();
+    }
+
     draw() {
         this.scene?.draw();
     }
@@ -26,6 +30,7 @@ class SceneManager {
             this.scene.data[option] = options[option];
         }
 
+        this.scene.init();
     }
 
     onResize() {

@@ -9,6 +9,8 @@ class Element {
         this.sy = this.game.sy;
     }
 
+    init() {}
+
     draw() {}
 
     onResize() {
