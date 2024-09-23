@@ -11,7 +11,7 @@ class SceneManager {
         this.scene?.draw();
     }
 
-    setScene(scene) {
+    setScene(scene, options = {}) {
         switch (scene) {
             case "main":
                 this.scene = new MainScene(this.game);
@@ -21,6 +21,11 @@ class SceneManager {
                 this.scene = new SongScene(this.game);
                 break;
         }
+
+        for (let option in options) {
+            this.scene.data[option] = options[option];
+        }
+
     }
 
     onResize() {
