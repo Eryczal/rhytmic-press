@@ -1,1065 +1,221 @@
 {
     "bpm": 80,
+    "speed": 1,
     "notes": [
-        {
-            "beat": 1,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 1.4,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 1.8,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 3,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 3.4,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 3.8,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 5,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 5.4,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 5.8,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 7,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 7.4,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 7.8,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 9,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 9.4,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 9.8,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 11,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 11.4,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 11.8,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 13,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 13.4,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 13.8,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 16,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 16.5,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 17,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 17.5,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 18,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 18.5,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 19,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 19.5,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 20,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 20.5,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 21,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 21.5,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 22,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 22.5,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 23,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 23.5,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 24,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 24.5,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 25,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 25.5,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 26,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 26.5,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 27,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 27.5,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 28,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 28.5,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 29,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 29.5,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 30,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 30.5,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 31,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 31.5,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 32,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 32.5,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 32.75,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 33,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 33.5,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 33.75,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 34,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 34.5,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 34.75,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 35,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 35.5,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 35.75,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 36,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 36.5,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 36.75,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 37,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 37.5,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 37.75,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 38,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 38.5,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 38.75,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 39,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 39.5,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 39.75,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 40,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 40.5,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 40.75,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 41,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 41.5,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 41.75,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 42,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 42.5,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 42.75,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 43,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 43.5,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 43.75,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 44,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 44.5,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 44.75,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 45,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 45.5,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 45.75,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 46,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 46.5,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 46.75,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 47,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 47.5,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 47.75,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 48,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 48.25,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 48.5,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 48.75,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 49,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 49.25,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 49.5,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 49.75,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 50,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 50.25,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 50.5,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 50.75,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 51,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 51.25,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 51.5,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 51.75,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 52,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 52.25,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 52.5,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 52.75,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 53,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 53.25,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 53.5,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 53.75,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 54,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 54.25,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 54.5,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 54.75,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 55,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 55.25,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 55.5,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 55.75,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 56.25,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 56.5,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 56.75,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 57,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 57.25,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 57.5,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 57.75,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 58,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 58.25,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 58.5,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 58.75,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 59,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 59.25,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 59.5,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 59.75,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 60,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 60.25,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 60.5,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 60.75,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 61,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 61.25,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 61.5,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 61.75,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 62,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 62.25,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 62.5,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 62.75,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 63,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 63.25,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 63.5,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 63.75,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 64,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 64.5,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 64.75,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 65,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 65.5,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 65.75,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 66,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 66.5,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 66.75,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 67,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 67.5,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 67.75,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 68,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 68.5,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 68.75,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 69,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 69.5,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 69.75,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 70,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 70.5,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 70.75,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 71,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 71.5,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 71.75,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 72,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 72.5,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 72.75,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 73,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 73.5,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 73.75,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 74,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 74.5,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 74.75,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 75,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 75.5,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 75.75,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 76,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 76.5,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 76.75,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 77,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 77.5,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 77.75,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 78,
-            "key": "ArrowRight",
-            "type": "short"
-        },
-        {
-            "beat": 78.5,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 78.75,
-            "key": "ArrowLeft",
-            "type": "short"
-        },
-        {
-            "beat": 79,
-            "key": "ArrowDown",
-            "type": "short"
-        },
-        {
-            "beat": 79.5,
-            "key": "ArrowUp",
-            "type": "short"
-        },
-        {
-            "beat": 79.75,
-            "key": "ArrowUp",
-            "type": "short"
-        }
+        { "beat": 1, "key": "2", "type": "long", "duration": 4 },
+        { "beat": 1.4, "key": "ArrowLeft", "type": "short" },
+        { "beat": 1.8, "key": "ArrowLeft", "type": "short" },
+        { "beat": 3, "key": "ArrowRight", "type": "short" },
+        { "beat": 3.4, "key": "ArrowRight", "type": "short" },
+        { "beat": 3.8, "key": "ArrowRight", "type": "short" },
+        { "beat": 5, "key": "ArrowLeft", "type": "short" },
+        { "beat": 5.4, "key": "ArrowLeft", "type": "short" },
+        { "beat": 5.8, "key": "ArrowLeft", "type": "short" },
+        { "beat": 7, "key": "ArrowRight", "type": "short" },
+        { "beat": 7.4, "key": "ArrowRight", "type": "short" },
+        { "beat": 7.8, "key": "ArrowRight", "type": "short" },
+        { "beat": 9, "key": "ArrowLeft", "type": "short" },
+        { "beat": 9.4, "key": "ArrowLeft", "type": "short" },
+        { "beat": 9.8, "key": "ArrowLeft", "type": "short" },
+        { "beat": 11, "key": "ArrowRight", "type": "short" },
+        { "beat": 11.4, "key": "ArrowRight", "type": "short" },
+        { "beat": 11.8, "key": "ArrowRight", "type": "short" },
+        { "beat": 13, "key": "ArrowLeft", "type": "short" },
+        { "beat": 13.4, "key": "ArrowLeft", "type": "short" },
+        { "beat": 13.8, "key": "ArrowLeft", "type": "short" },
+        { "beat": 15, "key": "ArrowRight", "type": "short" },
+        { "beat": 15.4, "key": "ArrowRight", "type": "short" },
+        { "beat": 15.8, "key": "ArrowRight", "type": "short" },
+        { "beat": 17, "key": "ArrowUp", "type": "short" },
+        { "beat": 17.5, "key": "ArrowDown", "type": "short" },
+        { "beat": 18, "key": "ArrowLeft", "type": "short" },
+        { "beat": 18.5, "key": "ArrowRight", "type": "short" },
+        { "beat": 19, "key": "ArrowUp", "type": "short" },
+        { "beat": 19.5, "key": "ArrowDown", "type": "short" },
+        { "beat": 20, "key": "ArrowLeft", "type": "short" },
+        { "beat": 20.5, "key": "ArrowRight", "type": "short" },
+        { "beat": 21, "key": "ArrowUp", "type": "short" },
+        { "beat": 21.5, "key": "ArrowDown", "type": "short" },
+        { "beat": 22, "key": "ArrowLeft", "type": "short" },
+        { "beat": 22.5, "key": "ArrowRight", "type": "short" },
+        { "beat": 23, "key": "ArrowUp", "type": "short" },
+        { "beat": 23.5, "key": "ArrowDown", "type": "short" },
+        { "beat": 24, "key": "ArrowLeft", "type": "short" },
+        { "beat": 24.5, "key": "ArrowRight", "type": "short" },
+        { "beat": 25, "key": "ArrowDown", "type": "short" },
+        { "beat": 25.5, "key": "ArrowUp", "type": "short" },
+        { "beat": 26, "key": "ArrowRight", "type": "short" },
+        { "beat": 26.5, "key": "ArrowLeft", "type": "short" },
+        { "beat": 27, "key": "ArrowDown", "type": "short" },
+        { "beat": 27.5, "key": "ArrowUp", "type": "short" },
+        { "beat": 28, "key": "ArrowRight", "type": "short" },
+        { "beat": 28.5, "key": "ArrowLeft", "type": "short" },
+        { "beat": 29, "key": "ArrowDown", "type": "short" },
+        { "beat": 29.5, "key": "ArrowUp", "type": "short" },
+        { "beat": 30, "key": "ArrowRight", "type": "short" },
+        { "beat": 30.5, "key": "ArrowLeft", "type": "short" },
+        { "beat": 31, "key": "ArrowDown", "type": "short" },
+        { "beat": 31.5, "key": "ArrowUp", "type": "short" },
+        { "beat": 32, "key": "ArrowRight", "type": "short" },
+        { "beat": 32.5, "key": "ArrowLeft", "type": "short" },
+        { "beat": 33, "key": "ArrowLeft", "type": "short" },
+        { "beat": 33.5, "key": "ArrowRight", "type": "short" },
+        { "beat": 33.75, "key": "ArrowRight", "type": "short" },
+        { "beat": 34, "key": "ArrowUp", "type": "short" },
+        { "beat": 34.5, "key": "ArrowDown", "type": "short" },
+        { "beat": 34.75, "key": "ArrowDown", "type": "short" },
+        { "beat": 35, "key": "ArrowRight", "type": "short" },
+        { "beat": 35.5, "key": "ArrowLeft", "type": "short" },
+        { "beat": 35.75, "key": "ArrowLeft", "type": "short" },
+        { "beat": 36, "key": "ArrowDown", "type": "short" },
+        { "beat": 36.5, "key": "ArrowUp", "type": "short" },
+        { "beat": 36.75, "key": "ArrowUp", "type": "short" },
+        { "beat": 37, "key": "ArrowLeft", "type": "short" },
+        { "beat": 37.5, "key": "ArrowRight", "type": "short" },
+        { "beat": 37.75, "key": "ArrowRight", "type": "short" },
+        { "beat": 38, "key": "ArrowUp", "type": "short" },
+        { "beat": 38.5, "key": "ArrowDown", "type": "short" },
+        { "beat": 38.75, "key": "ArrowDown", "type": "short" },
+        { "beat": 39, "key": "ArrowRight", "type": "short" },
+        { "beat": 39.5, "key": "ArrowLeft", "type": "short" },
+        { "beat": 39.75, "key": "ArrowLeft", "type": "short" },
+        { "beat": 40, "key": "ArrowDown", "type": "short" },
+        { "beat": 40.5, "key": "ArrowUp", "type": "short" },
+        { "beat": 40.75, "key": "ArrowUp", "type": "short" },
+        { "beat": 41, "key": "ArrowLeft", "type": "short" },
+        { "beat": 41.5, "key": "ArrowRight", "type": "short" },
+        { "beat": 41.75, "key": "ArrowRight", "type": "short" },
+        { "beat": 42, "key": "ArrowUp", "type": "short" },
+        { "beat": 42.5, "key": "ArrowDown", "type": "short" },
+        { "beat": 42.75, "key": "ArrowDown", "type": "short" },
+        { "beat": 43, "key": "ArrowRight", "type": "short" },
+        { "beat": 43.5, "key": "ArrowLeft", "type": "short" },
+        { "beat": 43.75, "key": "ArrowLeft", "type": "short" },
+        { "beat": 44, "key": "ArrowDown", "type": "short" },
+        { "beat": 44.5, "key": "ArrowUp", "type": "short" },
+        { "beat": 44.75, "key": "ArrowUp", "type": "short" },
+        { "beat": 45, "key": "ArrowLeft", "type": "short" },
+        { "beat": 45.5, "key": "ArrowRight", "type": "short" },
+        { "beat": 45.75, "key": "ArrowRight", "type": "short" },
+        { "beat": 46, "key": "ArrowUp", "type": "short" },
+        { "beat": 46.5, "key": "ArrowDown", "type": "short" },
+        { "beat": 46.75, "key": "ArrowDown", "type": "short" },
+        { "beat": 47, "key": "ArrowRight", "type": "short" },
+        { "beat": 47.5, "key": "ArrowLeft", "type": "short" },
+        { "beat": 47.75, "key": "ArrowLeft", "type": "short" },
+        { "beat": 48, "key": "ArrowDown", "type": "short" },
+        { "beat": 48.5, "key": "ArrowUp", "type": "short" },
+        { "beat": 48.75, "key": "ArrowUp", "type": "short" },
+        { "beat": 49, "key": "ArrowLeft", "type": "short" },
+        { "beat": 49.25, "key": "ArrowRight", "type": "short" },
+        { "beat": 49.5, "key": "ArrowLeft", "type": "short" },
+        { "beat": 49.75, "key": "ArrowRight", "type": "short" },
+        { "beat": 50, "key": "ArrowUp", "type": "short" },
+        { "beat": 50.25, "key": "ArrowDown", "type": "short" },
+        { "beat": 50.5, "key": "ArrowUp", "type": "short" },
+        { "beat": 50.75, "key": "ArrowDown", "type": "short" },
+        { "beat": 51, "key": "ArrowLeft", "type": "short" },
+        { "beat": 51.25, "key": "ArrowRight", "type": "short" },
+        { "beat": 51.5, "key": "ArrowLeft", "type": "short" },
+        { "beat": 51.75, "key": "ArrowRight", "type": "short" },
+        { "beat": 52, "key": "ArrowUp", "type": "short" },
+        { "beat": 52.25, "key": "ArrowDown", "type": "short" },
+        { "beat": 52.5, "key": "ArrowUp", "type": "short" },
+        { "beat": 52.75, "key": "ArrowDown", "type": "short" },
+        { "beat": 53, "key": "ArrowLeft", "type": "short" },
+        { "beat": 53.25, "key": "ArrowRight", "type": "short" },
+        { "beat": 53.5, "key": "ArrowLeft", "type": "short" },
+        { "beat": 53.75, "key": "ArrowRight", "type": "short" },
+        { "beat": 54, "key": "ArrowUp", "type": "short" },
+        { "beat": 54.25, "key": "ArrowDown", "type": "short" },
+        { "beat": 54.5, "key": "ArrowUp", "type": "short" },
+        { "beat": 54.75, "key": "ArrowDown", "type": "short" },
+        { "beat": 55, "key": "ArrowLeft", "type": "short" },
+        { "beat": 55.25, "key": "ArrowRight", "type": "short" },
+        { "beat": 55.5, "key": "ArrowLeft", "type": "short" },
+        { "beat": 55.75, "key": "ArrowRight", "type": "short" },
+        { "beat": 56, "key": "ArrowUp", "type": "short" },
+        { "beat": 56.25, "key": "ArrowDown", "type": "short" },
+        { "beat": 56.5, "key": "ArrowUp", "type": "short" },
+        { "beat": 56.75, "key": "ArrowDown", "type": "short" },
+        { "beat": 57.25, "key": "ArrowLeft", "type": "short" },
+        { "beat": 57.5, "key": "ArrowUp", "type": "short" },
+        { "beat": 57.75, "key": "ArrowUp", "type": "short" },
+        { "beat": 58, "key": "ArrowLeft", "type": "short" },
+        { "beat": 58.25, "key": "ArrowRight", "type": "short" },
+        { "beat": 58.5, "key": "ArrowDown", "type": "short" },
+        { "beat": 58.75, "key": "ArrowDown", "type": "short" },
+        { "beat": 59, "key": "ArrowRight", "type": "short" },
+        { "beat": 59.25, "key": "ArrowLeft", "type": "short" },
+        { "beat": 59.5, "key": "ArrowUp", "type": "short" },
+        { "beat": 59.75, "key": "ArrowUp", "type": "short" },
+        { "beat": 60, "key": "ArrowLeft", "type": "short" },
+        { "beat": 60.25, "key": "ArrowRight", "type": "short" },
+        { "beat": 60.5, "key": "ArrowDown", "type": "short" },
+        { "beat": 60.75, "key": "ArrowDown", "type": "short" },
+        { "beat": 61, "key": "ArrowRight", "type": "short" },
+        { "beat": 61.25, "key": "ArrowLeft", "type": "short" },
+        { "beat": 61.5, "key": "ArrowUp", "type": "short" },
+        { "beat": 61.75, "key": "ArrowUp", "type": "short" },
+        { "beat": 62, "key": "ArrowLeft", "type": "short" },
+        { "beat": 62.25, "key": "ArrowRight", "type": "short" },
+        { "beat": 62.5, "key": "ArrowDown", "type": "short" },
+        { "beat": 62.75, "key": "ArrowDown", "type": "short" },
+        { "beat": 63, "key": "ArrowRight", "type": "short" },
+        { "beat": 63.25, "key": "ArrowLeft", "type": "short" },
+        { "beat": 63.5, "key": "ArrowUp", "type": "short" },
+        { "beat": 63.75, "key": "ArrowUp", "type": "short" },
+        { "beat": 64, "key": "ArrowLeft", "type": "short" },
+        { "beat": 64.25, "key": "ArrowRight", "type": "short" },
+        { "beat": 64.5, "key": "ArrowDown", "type": "short" },
+        { "beat": 64.75, "key": "ArrowDown", "type": "short" },
+        { "beat": 65, "key": "ArrowLeft", "type": "short" },
+        { "beat": 65.5, "key": "ArrowRight", "type": "short" },
+        { "beat": 65.75, "key": "ArrowRight", "type": "short" },
+        { "beat": 66, "key": "ArrowUp", "type": "short" },
+        { "beat": 66.5, "key": "ArrowDown", "type": "short" },
+        { "beat": 66.75, "key": "ArrowDown", "type": "short" },
+        { "beat": 67, "key": "ArrowRight", "type": "short" },
+        { "beat": 67.5, "key": "ArrowLeft", "type": "short" },
+        { "beat": 67.75, "key": "ArrowLeft", "type": "short" },
+        { "beat": 68, "key": "ArrowDown", "type": "short" },
+        { "beat": 68.5, "key": "ArrowUp", "type": "short" },
+        { "beat": 68.75, "key": "ArrowUp", "type": "short" },
+        { "beat": 69, "key": "ArrowLeft", "type": "short" },
+        { "beat": 69.5, "key": "ArrowRight", "type": "short" },
+        { "beat": 69.75, "key": "ArrowRight", "type": "short" },
+        { "beat": 70, "key": "ArrowUp", "type": "short" },
+        { "beat": 70.5, "key": "ArrowDown", "type": "short" },
+        { "beat": 70.75, "key": "ArrowDown", "type": "short" },
+        { "beat": 71, "key": "ArrowRight", "type": "short" },
+        { "beat": 71.5, "key": "ArrowLeft", "type": "short" },
+        { "beat": 71.75, "key": "ArrowLeft", "type": "short" },
+        { "beat": 72, "key": "ArrowDown", "type": "short" },
+        { "beat": 72.5, "key": "ArrowUp", "type": "short" },
+        { "beat": 72.75, "key": "ArrowUp", "type": "short" },
+        { "beat": 73, "key": "ArrowLeft", "type": "short" },
+        { "beat": 73.5, "key": "ArrowRight", "type": "short" },
+        { "beat": 73.75, "key": "ArrowRight", "type": "short" },
+        { "beat": 74, "key": "ArrowUp", "type": "short" },
+        { "beat": 74.5, "key": "ArrowDown", "type": "short" },
+        { "beat": 74.75, "key": "ArrowDown", "type": "short" },
+        { "beat": 75, "key": "ArrowRight", "type": "short" },
+        { "beat": 75.5, "key": "ArrowLeft", "type": "short" },
+        { "beat": 75.75, "key": "ArrowLeft", "type": "short" },
+        { "beat": 76, "key": "ArrowDown", "type": "short" },
+        { "beat": 76.5, "key": "ArrowUp", "type": "short" },
+        { "beat": 76.75, "key": "ArrowUp", "type": "short" },
+        { "beat": 77, "key": "ArrowLeft", "type": "short" },
+        { "beat": 77.5, "key": "ArrowRight", "type": "short" },
+        { "beat": 77.75, "key": "ArrowRight", "type": "short" },
+        { "beat": 78, "key": "ArrowUp", "type": "short" },
+        { "beat": 78.5, "key": "ArrowDown", "type": "short" },
+        { "beat": 78.75, "key": "ArrowDown", "type": "short" },
+        { "beat": 79, "key": "ArrowRight", "type": "short" },
+        { "beat": 79.5, "key": "ArrowLeft", "type": "short" },
+        { "beat": 79.75, "key": "ArrowLeft", "type": "short" },
+        { "beat": 80, "key": "ArrowDown", "type": "short" },
+        { "beat": 80.5, "key": "ArrowUp", "type": "short" },
+        { "beat": 80.75, "key": "ArrowUp", "type": "short" }
     ]
 }
