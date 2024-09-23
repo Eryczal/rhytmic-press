@@ -11,7 +11,7 @@ class PlayButton extends Element {
 
     onKeyUp(e) {
         if (e.key === "Enter") {
-            this.game.sceneManager.setScene("song");
+            this.game.sceneManager.setScene("song", { song: "451" });
         }
     }
 }

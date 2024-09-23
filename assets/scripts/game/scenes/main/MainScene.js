@@ -5,7 +5,7 @@ class MainScene extends Scene {
     constructor(game) {
         super(game);
 
-        this.elementHolder.addElement("play", new PlayButton(game));
+        this.elementHolder.addElement("playButton", new PlayButton(game));
     }
 }
 

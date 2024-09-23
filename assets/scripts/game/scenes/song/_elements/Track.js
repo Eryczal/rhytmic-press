@@ -1,13 +1,19 @@
 import { Element } from "../../../classes/Element.js";
 
 class Track extends Element {
-    constructor(game, area) {
+    constructor(game) {
         super(game);
+    }
 
-        this.songArea = area;
+    init() {
+        this.songArea = this.game.sceneManager.scene.area;
     }
 
     draw() {
+        if (!this.songArea) {
+            return;
+        }
+
         this.ctx.fillStyle = "#333";
         this.ctx.fillRect(this.songArea.start, 0, this.songArea.x * 100, this.sy * 100);
         this.ctx.fillStyle = "#000";
