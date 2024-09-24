@@ -9,7 +9,6 @@ class SongManager {
     init() {
         this.songArea = this.game.sceneManager.scene.area;
         this.score = 0;
-        this.holdingBonus = setInterval(() => this.checkHolding(), 200);
 
         this.pressY = this.songArea.y * 75;
         this.pressH = this.songArea.y * 11;
@@ -26,7 +25,7 @@ class SongManager {
         }
 
         this.ctx = this.game.canvasManager.ctx;
-        this.beatOffset = 2;
+        this.beatOffset = this.startingBeat ? 0 : 2;
         this.playing = false;
         this.startSong();
     }
@@ -39,6 +38,7 @@ class SongManager {
             this.songData = data;
 
             this.beat = (60 / this.songData.bpm) * 1000;
+            this.holdingBonus = setInterval(() => this.checkHolding(), this.beat * 0.2);
         } catch (error) {
             throw new Error("Can't load song");
         }
@@ -114,14 +114,21 @@ class SongManager {
 
     drawNote(note, y) {
         this.ctx.fillStyle = "#696";
+        let ny = note.holding ? this.pressY : y;
 
         if (note.type === "short") {
             this.ctx.fillRect(this.getPosition(note.key), y, this.noteWidth, this.noteHeight);
         } else {
-            this.ctx.fillRect(this.getPosition(note.key), y + this.noteHeight, this.noteWidth, note.duration * -this.pressY);
+            const heldDuration = note.holding ? performance.now() - note.holding : 0;
+            const heldBeats = heldDuration / this.beat;
+            const remainingDuration = Math.max(0, note.duration - heldBeats);
+
+            const height = remainingDuration * -this.pressY;
+
+            this.ctx.fillRect(this.getPosition(note.key), ny + this.noteHeight, this.noteWidth, height);
         }
 
-        this.game.canvasManager.writeText(this.getArrow(note.key), this.getPosition(note.key) + this.noteWidth / 2, y + this.noteHeight / 2, this.noteWidth);
+        this.game.canvasManager.writeText(this.getArrow(note.key), this.getPosition(note.key) + this.noteWidth / 2, ny + this.noteHeight / 2, this.noteWidth);
     }
 
     checkNote(note) {
@@ -135,6 +142,7 @@ class SongManager {
         this.score += difference < 80 ? 100 : 20;
         cell.used = true;
         cell.holding = note.type === "long" ? note.beat : false;
+        note.holding = performance.now();
 
         return true;
     }
@@ -147,8 +155,8 @@ class SongManager {
         }
     }
 
-    removeLongNote(beat) {
-        const index = this.songData.notes.findIndex((note) => note.type === "long" && note.beat === beat);
+    removeLongNote(beat, key) {
+        const index = this.songData.notes.findIndex((note) => note.type === "long" && (note.beat === beat || note.key === key));
 
         if (index !== -1) {
             const cellId = this.getCellId(this.songData.notes[index].key);
@@ -181,6 +189,9 @@ class SongManager {
         const cell = this.cells[this.getCellId(e.key)];
 
         if (cell) {
+            if (cell.holding) {
+                this.removeLongNote(null, e.key);
+            }
             cell.pressedTime = null;
             cell.used = false;
             cell.holding = false;
