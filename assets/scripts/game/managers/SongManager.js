@@ -69,7 +69,7 @@ class SongManager {
 
         for (let i = 0; i < this.songData.notes.length; i++) {
             const note = this.songData.notes[i];
-            const timeSinceStart = elapsed - (note.beat - 2 + this.beatOffset) * this.beat;
+            const timeSinceStart = elapsed - (note.beat - 1 / this.songData.speed - 1 + this.beatOffset) * this.beat;
             const timeSinceHit = elapsed - (note.beat + this.beatOffset) * this.beat;
 
             if (timeSinceStart >= 0 && timeSinceHit < 3000) {
