@@ -89,6 +89,8 @@ class SongManager {
                 if (y > height || (addedScore && holding === false)) {
                     if (holding !== false) {
                         this.removeLongNote(holding);
+                        i--;
+                        continue;
                     }
 
                     this.songData.notes.splice(i, 1);
