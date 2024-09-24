@@ -1,5 +1,4 @@
 import { Scene } from "../../classes/Scene.js";
-import { PressArea } from "./_elements/PressArea.js";
 import { Track } from "./_elements/Track.js";
 
 class SongScene extends Scene {
@@ -20,7 +19,6 @@ class SongScene extends Scene {
 
         await this.game.songManager.loadSong(this.data.song);
         this.elementHolder.addElement("track", new Track(this.game));
-        this.elementHolder.addElement("pressArea", new PressArea(this.game));
 
         super.init();
         this.game.songManager.init();
