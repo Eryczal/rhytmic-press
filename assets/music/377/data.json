@@ -1,0 +1,30 @@
+{
+    "bpm": 130,
+    "speed": 0.1,
+    "notes": [
+        { "beat": 1, "key": "ArrowUp", "type": "long", "duration": 3.6 },
+        { "beat": 3, "key": "ArrowLeft", "type": "short" },
+        { "beat": 4, "key": "ArrowRight", "type": "short" },
+        { "beat": 5, "key": "ArrowDown", "type": "long", "duration": 3.6 },
+        { "beat": 7, "key": "ArrowRight", "type": "short" },
+        { "beat": 8, "key": "ArrowLeft", "type": "short" },
+        { "beat": 9, "key": "ArrowUp", "type": "long", "duration": 3.6 },
+        { "beat": 11, "key": "ArrowLeft", "type": "short" },
+        { "beat": 12, "key": "ArrowRight", "type": "short" },
+        { "beat": 13, "key": "ArrowDown", "type": "long", "duration": 3.6 },
+        { "beat": 15, "key": "ArrowRight", "type": "short" },
+        { "beat": 16, "key": "ArrowLeft", "type": "short" },
+        { "beat": 17, "key": "ArrowLeft", "type": "long", "duration": 3.6 },
+        { "beat": 19, "key": "ArrowUp", "type": "short" },
+        { "beat": 20, "key": "ArrowDown", "type": "short" },
+        { "beat": 21, "key": "ArrowRight", "type": "long", "duration": 3.6 },
+        { "beat": 23, "key": "ArrowDown", "type": "short" },
+        { "beat": 24, "key": "ArrowUp", "type": "short" },
+        { "beat": 25, "key": "ArrowLeft", "type": "long", "duration": 3.6 },
+        { "beat": 27, "key": "ArrowUp", "type": "short" },
+        { "beat": 28, "key": "ArrowDown", "type": "short" },
+        { "beat": 29, "key": "ArrowRight", "type": "long", "duration": 3.6 },
+        { "beat": 31, "key": "ArrowDown", "type": "short" },
+        { "beat": 32, "key": "ArrowUp", "type": "short" }
+    ]
+}

@@ -1,11 +1,11 @@
 import { Scene } from "../../classes/Scene.js";
-import { PlayButton } from "./_elements/PlayButton.js";
+import { SongList } from "./_elements/SongList.js";
 
 class MainScene extends Scene {
     constructor(game) {
         super(game);
 
-        this.elementHolder.addElement("playButton", new PlayButton(game));
+        this.elementHolder.addElement("songList", new SongList(game));
     }
 }
 
