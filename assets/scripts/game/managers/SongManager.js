@@ -9,6 +9,7 @@ class SongManager {
     init() {
         this.songArea = this.game.sceneManager.scene.area;
         this.score = 0;
+        this.holdingBonus = setInterval(() => this.checkHolding(), 200);
 
         this.pressY = this.songArea.y * 75;
         this.pressH = this.songArea.y * 11;
@@ -73,26 +74,25 @@ class SongManager {
 
             if (timeSinceStart >= 0 && timeSinceHit < 3000) {
                 const progress = (timeSinceStart / this.beat) * this.songData.speed;
-
                 const y = this.pressY * progress;
 
-                this.drawNote(note, y);
-                let clicked = this.checkNote(note);
+                let height = this.game.canvasManager.canvas.height + this.noteHeight;
 
-                if (clicked) {
-                    this.cells[this.getCellId(note.key)].used = true;
+                if (note.type === "long") {
+                    height += note.duration * this.pressY - (this.game.canvasManager.canvas.height - this.pressY);
                 }
 
-                if (note.type === "short") {
-                    if (y > this.game.canvasManager.canvas.height + this.noteHeight || clicked) {
-                        this.songData.notes.splice(i, 1);
-                        i--;
+                this.drawNote(note, y);
+                const addedScore = this.checkNote(note);
+                const holding = this.cells[this.getCellId(note.key)].holding;
+
+                if (y > height || (addedScore && holding === false)) {
+                    if (holding !== false) {
+                        this.removeLongNote(holding);
                     }
-                } else {
-                    if (y > this.game.canvasManager.canvas.height + this.noteHeight + note.duration * this.pressY) {
-                        this.songData.notes.splice(i, 1);
-                        i--;
-                    }
+
+                    this.songData.notes.splice(i, 1);
+                    i--;
                 }
             } else if (timeSinceStart > 500) {
                 if (!this.startingBeat) {
@@ -124,22 +124,36 @@ class SongManager {
 
     checkNote(note) {
         const cell = this.cells[this.getCellId(note.key)];
-
-        if (cell.pressedTime === null || cell.used) {
-            return false;
-        }
-
         const difference = Math.abs(cell.pressedTime - (note.beat + this.beatOffset - 1) * this.beat);
 
-        if (difference >= 200) {
+        if (cell.pressedTime === null || cell.used || difference >= 200) {
             return false;
         }
 
         this.score += difference < 80 ? 100 : 20;
-
         cell.used = true;
+        cell.holding = note.type === "long" ? note.beat : false;
 
         return true;
+    }
+
+    checkHolding() {
+        for (let cell in this.cells) {
+            if (this.cells[cell].holding) {
+                this.score += 10;
+            }
+        }
+    }
+
+    removeLongNote(beat) {
+        const index = this.songData.notes.findIndex((note) => note.type === "long" && note.beat === beat);
+
+        if (index !== -1) {
+            const cellId = this.getCellId(this.songData.notes[index].key);
+
+            this.cells[cellId].holding = false;
+            this.songData.notes.splice(index, 1);
+        }
     }
 
     onResize() {
@@ -154,15 +168,20 @@ class SongManager {
     }
 
     onKeyDown(e) {
-        if (this.cells[this.getCellId(e.key)]) {
-            this.cells[this.getCellId(e.key)].pressedTime = performance.now() - this.songStart;
+        const cell = this.cells[this.getCellId(e.key)];
+
+        if (cell && cell.pressedTime === null) {
+            cell.pressedTime = performance.now() - this.songStart;
         }
     }
 
     onKeyUp(e) {
-        if (this.cells[this.getCellId(e.key)]) {
-            this.cells[this.getCellId(e.key)].pressedTime = null;
-            this.cells[this.getCellId(e.key)].used = false;
+        const cell = this.cells[this.getCellId(e.key)];
+
+        if (cell) {
+            cell.pressedTime = null;
+            cell.used = false;
+            cell.holding = false;
         }
     }
 

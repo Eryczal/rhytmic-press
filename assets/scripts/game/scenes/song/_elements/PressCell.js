@@ -8,6 +8,7 @@ class PressCell extends Element {
         this.pressH = pressH;
         this.pressedTime = null;
         this.used = false;
+        this.holding = false;
     }
 
     init() {
