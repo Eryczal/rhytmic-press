@@ -25,7 +25,7 @@ class Game {
         this.sceneManager.draw();
 
         if (this.songManager.playing) {
-            this.songManager.playSong();
+            this.songManager.processNotes();
         }
 
         window.requestAnimationFrame(() => this.draw());

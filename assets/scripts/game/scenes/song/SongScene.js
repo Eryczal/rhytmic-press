@@ -35,8 +35,19 @@ class SongScene extends Scene {
 
     onResize() {
         this.songArea = this.calculateArea();
+        this.game.songManager.onResize();
 
         super.onResize();
+    }
+
+    onKeyUp(e) {
+        super.onKeyUp(e);
+        this.game.songManager.onKeyUp(e);
+    }
+
+    onKeyDown(e) {
+        super.onKeyDown(e);
+        this.game.songManager.onKeyDown(e);
     }
 }
 
