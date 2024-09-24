@@ -26,7 +26,6 @@ class SongManager {
 
         this.ctx = this.game.canvasManager.ctx;
         this.noteOffset = 1 / this.songData.speed + 1;
-        this.beatOffset = this.startingBeat ? 0 : this.noteOffset;
         this.playing = false;
         this.startSong();
     }
@@ -57,7 +56,7 @@ class SongManager {
             }
             this.songAudio.play();
             this.holdingBonus = setInterval(() => this.checkHolding(), this.beat * 0.2);
-        }, this.beatOffset * this.beat);
+        }, this.noteOffset * this.beat);
 
         this.playing = true;
         this.processNotes();
@@ -71,7 +70,7 @@ class SongManager {
         for (let i = 0; i < this.songData.notes.length; i++) {
             const note = this.songData.notes[i];
             const timeSinceStart = elapsed - note.beat * this.beat;
-            const timeSinceHit = elapsed - (note.beat + this.beatOffset) * this.beat;
+            const timeSinceHit = elapsed - (note.beat + this.noteOffset) * this.beat;
 
             if (timeSinceStart >= 0 && timeSinceHit < 3000) {
                 const progress = (timeSinceStart / this.beat) * this.songData.speed;
@@ -138,7 +137,7 @@ class SongManager {
 
     checkNote(note) {
         const cell = this.cells[this.getCellId(note.key)];
-        const difference = Math.abs(cell.pressedTime - (note.beat + this.beatOffset - 1) * this.beat);
+        const difference = Math.abs(cell.pressedTime - (note.beat + this.noteOffset - 1) * this.beat);
 
         if (cell.pressedTime === null || cell.used || difference >= 200) {
             return false;
@@ -147,7 +146,7 @@ class SongManager {
         this.score += difference < 80 ? 100 : 20;
         cell.used = true;
         cell.holding = note.type === "long" ? note.beat : false;
-        note.holding = performance.now();
+        note.holding = this.songStart + (note.beat + this.noteOffset - 1) * this.beat; //performance.now()
 
         return true;
     }
