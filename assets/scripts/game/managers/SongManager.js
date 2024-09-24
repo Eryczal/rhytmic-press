@@ -25,7 +25,8 @@ class SongManager {
         }
 
         this.ctx = this.game.canvasManager.ctx;
-        this.beatOffset = this.startingBeat ? 0 : 2;
+        this.noteOffset = 1 / this.songData.speed + 1;
+        this.beatOffset = this.startingBeat ? 0 : this.noteOffset;
         this.playing = false;
         this.startSong();
     }
@@ -38,7 +39,6 @@ class SongManager {
             this.songData = data;
 
             this.beat = (60 / this.songData.bpm) * 1000;
-            this.holdingBonus = setInterval(() => this.checkHolding(), this.beat * 0.2);
         } catch (error) {
             throw new Error("Can't load song");
         }
@@ -56,6 +56,7 @@ class SongManager {
                 this.songAudio.currentTime = (this.startingBeat * this.beat) / 1000;
             }
             this.songAudio.play();
+            this.holdingBonus = setInterval(() => this.checkHolding(), this.beat * 0.2);
         }, this.beatOffset * this.beat);
 
         this.playing = true;
@@ -69,7 +70,7 @@ class SongManager {
 
         for (let i = 0; i < this.songData.notes.length; i++) {
             const note = this.songData.notes[i];
-            const timeSinceStart = elapsed - (note.beat - 1 / this.songData.speed - 1 + this.beatOffset) * this.beat;
+            const timeSinceStart = elapsed - note.beat * this.beat;
             const timeSinceHit = elapsed - (note.beat + this.beatOffset) * this.beat;
 
             if (timeSinceStart >= 0 && timeSinceHit < 3000) {
@@ -79,7 +80,7 @@ class SongManager {
                 let height = this.game.canvasManager.canvas.height + this.noteHeight;
 
                 if (note.type === "long") {
-                    height += note.duration * this.pressY - (this.game.canvasManager.canvas.height - this.pressY);
+                    height += note.duration * this.pressY * this.songData.speed - (this.game.canvasManager.canvas.height - this.pressY);
                 }
 
                 this.drawNote(note, y);
@@ -119,13 +120,17 @@ class SongManager {
         if (note.type === "short") {
             this.ctx.fillRect(this.getPosition(note.key), y, this.noteWidth, this.noteHeight);
         } else {
-            const heldDuration = note.holding ? performance.now() - note.holding : 0;
-            const heldBeats = heldDuration / this.beat;
-            const remainingDuration = Math.max(0, note.duration - heldBeats);
+            if (note.holding) {
+                const heldDuration = note.holding ? performance.now() - note.holding : 0;
+                const heldBeats = heldDuration / this.beat;
+                const remainingDuration = Math.max(0, note.duration - heldBeats);
 
-            const height = remainingDuration * -this.pressY;
+                const height = remainingDuration * -this.pressY * this.songData.speed;
 
-            this.ctx.fillRect(this.getPosition(note.key), ny + this.noteHeight, this.noteWidth, height);
+                this.ctx.fillRect(this.getPosition(note.key), ny, this.noteWidth, height);
+            } else {
+                this.ctx.fillRect(this.getPosition(note.key), ny, this.noteWidth, note.duration * -this.pressY * this.songData.speed);
+            }
         }
 
         this.game.canvasManager.writeText(this.getArrow(note.key), this.getPosition(note.key) + this.noteWidth / 2, ny + this.noteHeight / 2, this.noteWidth);
