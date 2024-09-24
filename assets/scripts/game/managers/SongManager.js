@@ -76,16 +76,23 @@ class SongManager {
 
                 const y = this.pressY * progress;
 
-                this.drawNote(note.key, y, note.type);
+                this.drawNote(note, y);
                 let clicked = this.checkNote(note);
 
                 if (clicked) {
                     this.cells[this.getCellId(note.key)].used = true;
                 }
 
-                if (y > this.game.canvasManager.canvas.height + this.noteHeight || clicked) {
-                    this.songData.notes.splice(i, 1);
-                    i--;
+                if (note.type === "short") {
+                    if (y > this.game.canvasManager.canvas.height + this.noteHeight || clicked) {
+                        this.songData.notes.splice(i, 1);
+                        i--;
+                    }
+                } else {
+                    if (y > this.game.canvasManager.canvas.height + this.noteHeight + note.duration * this.pressY) {
+                        this.songData.notes.splice(i, 1);
+                        i--;
+                    }
                 }
             } else if (timeSinceStart > 500) {
                 if (!this.startingBeat) {
@@ -103,10 +110,16 @@ class SongManager {
         this.game.canvasManager.writeText(`Wynik: ${this.score}`, 100, 50, 26);
     }
 
-    drawNote(key, y, type) {
+    drawNote(note, y) {
         this.ctx.fillStyle = "#696";
-        this.ctx.fillRect(this.getPosition(key), y, this.noteWidth, this.noteHeight);
-        this.game.canvasManager.writeText(this.getArrow(key), this.getPosition(key) + this.noteWidth / 2, y + this.noteHeight / 2, this.noteWidth);
+
+        if (note.type === "short") {
+            this.ctx.fillRect(this.getPosition(note.key), y, this.noteWidth, this.noteHeight);
+        } else {
+            this.ctx.fillRect(this.getPosition(note.key), y + this.noteHeight, this.noteWidth, note.duration * -this.pressY);
+        }
+
+        this.game.canvasManager.writeText(this.getArrow(note.key), this.getPosition(note.key) + this.noteWidth / 2, y + this.noteHeight / 2, this.noteWidth);
     }
 
     checkNote(note) {

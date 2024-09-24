@@ -2,7 +2,7 @@
     "bpm": 80,
     "speed": 1,
     "notes": [
-        { "beat": 1, "key": "2", "type": "long", "duration": 4 },
+        { "beat": 1, "key": "ArrowUp", "type": "long", "duration": 2 },
         { "beat": 1.4, "key": "ArrowLeft", "type": "short" },
         { "beat": 1.8, "key": "ArrowLeft", "type": "short" },
         { "beat": 3, "key": "ArrowRight", "type": "short" },
